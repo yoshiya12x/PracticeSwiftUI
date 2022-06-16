@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let items = ["1st", "2nd", "3rd", "4th", "5th"]
+    private let items = generateSampleList()
 
     var body: some View {
         TabView {
              ForEach(items, id: \.self) { item in
-                 Text(item)
+                 Text(item.title)
+                     .tabItem {
+                         Image(systemName: item.imageSystemName)
+                     }
              }
-         }
-         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+        }
+        .tabViewStyle(.page)
+        .indexViewStyle(.page(backgroundDisplayMode: .always))
     }
 }
 
