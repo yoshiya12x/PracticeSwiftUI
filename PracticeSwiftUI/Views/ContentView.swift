@@ -18,9 +18,14 @@ struct ContentView: View {
                          Image(systemName: item.imageSystemName)
                      }
              }
+            ToyPage()
+                .tabItem{
+                    Image(systemName: "gamecontroller")
+                }
         }
         .tabViewStyle(.page)
         .indexViewStyle(.page(backgroundDisplayMode: .always))
+        .ignoresSafeArea()
     }
 }
 
