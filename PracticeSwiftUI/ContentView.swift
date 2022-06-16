@@ -8,9 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let items = ["1st", "2nd", "3rd", "4th", "5th"]
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView {
+             ForEach(items, id: \.self) { item in
+                 Text(item)
+             }
+         }
+         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }
 
