@@ -10,22 +10,45 @@ import SwiftUI
 struct ToyPage: View {
     private let backgroundColors = [Color.white, Color.red, Color.green, Color.yellow, Color.blue]
     @State private var backgroundColorsIndex = 0
+    @State private var circleColor: Color?
+    @State private var circlesCount = 0
 
     var body: some View {
-        HStack(alignment: .center) {
-            Button("Change") {
-                if backgroundColorsIndex == backgroundColors.count - 1 {
-                    backgroundColorsIndex = 0
-                } else {
-                    backgroundColorsIndex += 1
+        VStack {
+            if circleColor != nil {
+                HStack {
+                    ForEach((1...circlesCount), id: \.self) { num in
+                        Circle()
+                            .fill(circleColor!)
+                    }
                 }
+                .animation(.default.speed(0.7), value: circlesCount)
             }
-            .buttonStyle(.borderedProminent)
+            HStack {
+                ToyButton(title: "Change") { changeBackgroundColor() }
+                ToyButton(title: "Show") {
+                    if circlesCount == 0 {
+                        circlesCount = 1
+                    }
+                    circleColor = backgroundColors[backgroundColorsIndex]
+                    changeBackgroundColor()
+                }
+                ToyButton(title: "Increase") { circlesCount += 1 }
+            }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(20)
         .background(backgroundColors[backgroundColorsIndex])
         // iOS15以降はvalueを指定することが推奨されている
-        .animation(.default.speed(0.3), value: backgroundColorsIndex)
+        .animation(.default.speed(0.5), value: backgroundColorsIndex)
+    }
+    
+    private func changeBackgroundColor() {
+        if backgroundColorsIndex == backgroundColors.count - 1 {
+            backgroundColorsIndex = 0
+        } else {
+            backgroundColorsIndex += 1
+        }
     }
 }
 
