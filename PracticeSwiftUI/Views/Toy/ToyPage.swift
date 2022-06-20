@@ -12,14 +12,17 @@ struct ToyPage: View {
     @State private var backgroundColorsIndex = 0
     @State private var circleColor: Color?
     @State private var circlesCount = 0
+    @State private var isTappedToyCircle = false
 
     var body: some View {
         VStack {
+            if isTappedToyCircle {
+                Text("Tapped")
+            }
             if circleColor != nil {
                 HStack {
                     ForEach((1...circlesCount), id: \.self) { num in
-                        Circle()
-                            .fill(circleColor!)
+                        ToyCircle(backgroundColor: circleColor!, isTapped: $isTappedToyCircle)
                     }
                 }
                 .animation(.default.speed(0.7), value: circlesCount)

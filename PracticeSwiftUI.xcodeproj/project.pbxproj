@@ -10,6 +10,7 @@
 		C75D0A70285AFE5600A09A25 /* PracticeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A6F285AFE5600A09A25 /* PracticeItem.swift */; };
 		C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A76285B044E00A09A25 /* ToyPage.swift */; };
 		C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A78285BFF3700A09A25 /* ToyButton.swift */; };
+		C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */; };
 		C7D0B73C285AB10200F6B33A /* PracticeSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B73B285AB10200F6B33A /* PracticeSwiftUIApp.swift */; };
 		C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B73D285AB10300F6B33A /* ContentView.swift */; };
 		C7D0B740285AB10500F6B33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B73F285AB10500F6B33A /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		C75D0A6F285AFE5600A09A25 /* PracticeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeItem.swift; sourceTree = "<group>"; };
 		C75D0A76285B044E00A09A25 /* ToyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyPage.swift; sourceTree = "<group>"; };
 		C75D0A78285BFF3700A09A25 /* ToyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyButton.swift; sourceTree = "<group>"; };
+		C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCircle.swift; sourceTree = "<group>"; };
 		C7D0B738285AB10200F6B33A /* PracticeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D0B73B285AB10200F6B33A /* PracticeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSwiftUIApp.swift; sourceTree = "<group>"; };
 		C7D0B73D285AB10300F6B33A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C75D0A78285BFF3700A09A25 /* ToyButton.swift */,
+				C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */,
 				C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */,
 				C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */,
 				C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */,
