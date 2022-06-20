@@ -15,28 +15,42 @@ struct ToyPage: View {
     @State private var isTappedToyCircle = false
 
     var body: some View {
-        VStack {
+        ZStack {
             if isTappedToyCircle {
-                Text("Tapped")
-            }
-            if circleColor != nil {
-                HStack {
+                VStack {
                     ForEach((1...circlesCount), id: \.self) { num in
-                        ToyCircle(backgroundColor: circleColor!, isTapped: $isTappedToyCircle)
+                        Image(systemName: "theatermasks")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(maxWidth: .infinity, maxHeight: .infinity)
+                            .animation(.default.speed(0.7), value: isTappedToyCircle)
                     }
                 }
-                .animation(.default.speed(0.7), value: circlesCount)
             }
-            HStack {
-                ToyButton(title: "Change") { changeBackgroundColor() }
-                ToyButton(title: "Show") {
-                    if circlesCount == 0 {
-                        circlesCount = 1
+            VStack {
+                if circleColor != nil {
+                    HStack {
+                        ForEach((1...circlesCount), id: \.self) { num in
+                            ToyCircle(backgroundColor: circleColor!, isTapped: $isTappedToyCircle)
+                        }
                     }
-                    circleColor = backgroundColors[backgroundColorsIndex]
-                    changeBackgroundColor()
+                    .animation(.default.speed(0.7), value: circlesCount)
                 }
-                ToyButton(title: "Increase") { circlesCount += 1 }
+                HStack {
+                    ToyButton(title: "Change") { changeBackgroundColor() }
+                    ToyButton(title: "Show") {
+                        if circlesCount == 0 {
+                            circlesCount = 1
+                        }
+                        circleColor = backgroundColors[backgroundColorsIndex]
+                        changeBackgroundColor()
+                    }
+                    ToyButton(title: "Increase") {
+                        if !isTappedToyCircle {
+                            circlesCount += 1
+                        }
+                    }
+                }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

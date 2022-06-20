@@ -14,7 +14,8 @@ struct ToyCircle: View {
     var body: some View {
         Circle()
             .fill(selectColor())
-            .onTapGesture { isTapped = true }
+            .onTapGesture { withAnimation() { isTapped = true } }
+            .animation(.default.speed(0.7), value: isTapped)
     }
 
     private func selectColor() -> Color {
