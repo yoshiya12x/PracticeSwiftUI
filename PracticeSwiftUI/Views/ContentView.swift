@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let items = generateSampleList()
+    private let items = generateList()
 
     var body: some View {
         TabView {
