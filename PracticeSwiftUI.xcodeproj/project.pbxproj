@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C736045428644E7A00155EE9 /* ToyBtton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C736045328644E7A00155EE9 /* ToyBtton.swift */; };
 		C75D0A70285SAFE5600A09A25 /* PracticeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A6F285SAFE5600A09A25 /* PracticeItem.swift */; };
 		C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A76285B044E00A09A25 /* ToyPage.swift */; };
 		C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A78285BFF3700A09A25 /* ToyButton.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C736045328644E7A00155EE9 /* ToyBtton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyBtton.swift; sourceTree = "<group>"; };
 		C75D0A6F285SAFE5600A09A25 /* PracticeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeItem.swift; sourceTree = "<group>"; };
 		C75D0A76285B044E00A09A25 /* ToyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyPage.swift; sourceTree = "<group>"; };
 		C75D0A78285BFF3700A09A25 /* ToyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyButton.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 			children = (
 				C75D0A78285BFF3700A09A25 /* ToyButton.swift */,
 				C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */,
-				C736045328644E7A00155EE9 /* ToyBtton.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -312,7 +309,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C736045428644E7A00155EE9 /* ToyBtton.swift in Sources */,
 				C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */,
 				C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */,
 				C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */,
