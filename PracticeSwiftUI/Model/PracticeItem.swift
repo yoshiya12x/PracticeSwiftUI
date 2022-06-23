@@ -15,7 +15,7 @@ struct PracticeItem: Hashable {
 
 func generateSampleList() -> [PracticeItem] {
     return [
-        PracticeItem(title: "1ssst", name: "ファースト", imageSystemName: "1.circle.fill"),
+        PracticeItem(title: "firrst", name: "ファースト", imageSystemName: "1.circle.fill"),
         PracticeItem(title: "2nd", name: "セカンド", imageSystemName: "2.circle.fill"),
         PracticeItem(title: "3rd", name: "サード", imageSystemName: "3.circle.fill"),
         PracticeItem(title: "4th", name: "フォース", imageSystemName: "4.circle.fill"),
