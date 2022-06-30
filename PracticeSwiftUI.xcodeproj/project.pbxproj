@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C75D0A70285SAFE5600A09A25 /* PracticeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A6F285SAFE5600A09A25 /* PracticeItem.swift */; };
+		C70EAE0A286D71B6009A9629 /* LineGraphPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EAE09286D71B6009A9629 /* LineGraphPage.swift */; };
+		C70EAE0E286D7F84009A9629 /* ServiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EAE0D286D7F84009A9629 /* ServiceItem.swift */; };
 		C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A76285B044E00A09A25 /* ToyPage.swift */; };
 		C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A78285BFF3700A09A25 /* ToyButton.swift */; };
 		C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */; };
@@ -38,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C75D0A6F285SAFE5600A09A25 /* PracticeItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PracticeItem.swift; sourceTree = "<group>"; };
+		C70EAE09286D71B6009A9629 /* LineGraphPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphPage.swift; sourceTree = "<group>"; };
+		C70EAE0D286D7F84009A9629 /* ServiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItem.swift; sourceTree = "<group>"; };
 		C75D0A76285B044E00A09A25 /* ToyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyPage.swift; sourceTree = "<group>"; };
 		C75D0A78285BFF3700A09A25 /* ToyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyButton.swift; sourceTree = "<group>"; };
 		C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCircle.swift; sourceTree = "<group>"; };
@@ -79,10 +81,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C70EAE08286D7189009A9629 /* LineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				C70EAE09286D71B6009A9629 /* LineGraphPage.swift */,
+			);
+			path = LineGraph;
+			sourceTree = "<group>";
+		};
 		C75D0A6E285SAFE5600A09A25 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C75D0A6F285SAFE5600A09A25 /* PracticeItem.swift */,
+				C70EAE0D286D7F84009A9629 /* ServiceItem.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,6 +107,7 @@
 		C75D0A72285B03CF00A09A25 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C70EAE08286D7189009A9629 /* LineGraph */,
 				C75D0A75285B042700A09A25 /* Toy */,
 				C7D0B73D285AB10300F6B33A /* ContentView.swift */,
 			);
@@ -313,8 +324,9 @@
 				C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */,
 				C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */,
 				C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */,
+				C70EAE0E286D7F84009A9629 /* ServiceItem.swift in Sources */,
+				C70EAE0A286D71B6009A9629 /* LineGraphPage.swift in Sources */,
 				C7D0B73C285AB10200F6B33A /* PracticeSwiftUIApp.swift in Sources */,
-				C75D0A70285SAFE5600A09A25 /* PracticeItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

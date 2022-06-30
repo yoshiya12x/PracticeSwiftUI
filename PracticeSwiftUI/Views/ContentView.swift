@@ -8,16 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
-    private let items = generateList()
-
     var body: some View {
         TabView {
-             ForEach(items, id: \.self) { item in
-                 Text(item.title)
-                     .tabItem {
-                         Image(systemName: item.imageSystemName)
-                     }
-             }
+            LineGraphPage()
+                 .padding(18)
+                 .tabItem {
+                     Image(systemName: "1.circle.fill")
+                 }
             ToyPage()
                 .tabItem{
                     Image(systemName: "gamecontroller")
