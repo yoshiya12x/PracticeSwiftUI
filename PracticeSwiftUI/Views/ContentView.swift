@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         TabView {
             LineGraphPage()
-                 .padding(18)
+                 .padding(16)
                  .tabItem {
                      Image(systemName: "1.circle.fill")
                  }
