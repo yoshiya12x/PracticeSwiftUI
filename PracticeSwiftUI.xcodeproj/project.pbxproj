@@ -13,6 +13,7 @@
 		C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A78285BFF3700A09A25 /* ToyButton.swift */; };
 		C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */; };
 		C7A837C5286ED0000074D0D1 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A837C4286ED0000074D0D1 /* LineGraph.swift */; };
+		C7A837C8286ED2230074D0D1 /* BarGraphPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A837C7286ED2230074D0D1 /* BarGraphPage.swift */; };
 		C7D0B73C285AB10200F6B33A /* PracticeSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B73B285AB10200F6B33A /* PracticeSwiftUIApp.swift */; };
 		C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B73D285AB10300F6B33A /* ContentView.swift */; };
 		C7D0B740285AB10500F6B33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B73F285AB10500F6B33A /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		C75D0A78285BFF3700A09A25 /* ToyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyButton.swift; sourceTree = "<group>"; };
 		C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCircle.swift; sourceTree = "<group>"; };
 		C7A837C4286ED0000074D0D1 /* LineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
+		C7A837C7286ED2230074D0D1 /* BarGraphPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphPage.swift; sourceTree = "<group>"; };
 		C7D0B738285AB10200F6B33A /* PracticeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D0B73B285AB10200F6B33A /* PracticeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSwiftUIApp.swift; sourceTree = "<group>"; };
 		C7D0B73D285AB10300F6B33A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 		C75D0A72285B03CF00A09A25 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C7A837C6286ED2060074D0D1 /* BarGraph */,
 				C70EAE08286D7189009A9629 /* LineGraph */,
 				C75D0A75285B042700A09A25 /* Toy */,
 				C7D0B73D285AB10300F6B33A /* ContentView.swift */,
@@ -142,6 +145,14 @@
 				C7A837C4286ED0000074D0D1 /* LineGraph.swift */,
 			);
 			path = Organisms;
+			sourceTree = "<group>";
+		};
+		C7A837C6286ED2060074D0D1 /* BarGraph */ = {
+			isa = PBXGroup;
+			children = (
+				C7A837C7286ED2230074D0D1 /* BarGraphPage.swift */,
+			);
+			path = BarGraph;
 			sourceTree = "<group>";
 		};
 		C7D0B72F285AB10200F6B33A = {
@@ -338,6 +349,7 @@
 				C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */,
 				C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */,
 				C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */,
+				C7A837C8286ED2230074D0D1 /* BarGraphPage.swift in Sources */,
 				C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */,
 				C7A837C5286ED0000074D0D1 /* LineGraph.swift in Sources */,
 				C70EAE0E286D7F84009A9629 /* ServiceItem.swift in Sources */,
