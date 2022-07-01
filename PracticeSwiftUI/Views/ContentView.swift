@@ -15,6 +15,11 @@ struct ContentView: View {
                  .tabItem {
                      Image(systemName: "1.circle.fill")
                  }
+            BarGraphPage()
+                 .padding(16)
+                 .tabItem {
+                     Image(systemName: "2.circle.fill")
+                 }
             ToyPage()
                 .tabItem{
                     Image(systemName: "gamecontroller")

@@ -14,6 +14,7 @@
 		C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */; };
 		C7A837C5286ED0000074D0D1 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A837C4286ED0000074D0D1 /* LineGraph.swift */; };
 		C7A837C8286ED2230074D0D1 /* BarGraphPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A837C7286ED2230074D0D1 /* BarGraphPage.swift */; };
+		C7A837CB286ED3F90074D0D1 /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A837CA286ED3F90074D0D1 /* BarGraph.swift */; };
 		C7D0B73C285AB10200F6B33A /* PracticeSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B73B285AB10200F6B33A /* PracticeSwiftUIApp.swift */; };
 		C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D0B73D285AB10300F6B33A /* ContentView.swift */; };
 		C7D0B740285AB10500F6B33A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D0B73F285AB10500F6B33A /* Assets.xcassets */; };
@@ -48,6 +49,7 @@
 		C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCircle.swift; sourceTree = "<group>"; };
 		C7A837C4286ED0000074D0D1 /* LineGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph.swift; sourceTree = "<group>"; };
 		C7A837C7286ED2230074D0D1 /* BarGraphPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraphPage.swift; sourceTree = "<group>"; };
+		C7A837CA286ED3F90074D0D1 /* BarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
 		C7D0B738285AB10200F6B33A /* PracticeSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D0B73B285AB10200F6B33A /* PracticeSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeSwiftUIApp.swift; sourceTree = "<group>"; };
 		C7D0B73D285AB10300F6B33A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,9 +152,18 @@
 		C7A837C6286ED2060074D0D1 /* BarGraph */ = {
 			isa = PBXGroup;
 			children = (
+				C7A837C9286ED3C80074D0D1 /* Organisms */,
 				C7A837C7286ED2230074D0D1 /* BarGraphPage.swift */,
 			);
 			path = BarGraph;
+			sourceTree = "<group>";
+		};
+		C7A837C9286ED3C80074D0D1 /* Organisms */ = {
+			isa = PBXGroup;
+			children = (
+				C7A837CA286ED3F90074D0D1 /* BarGraph.swift */,
+			);
+			path = Organisms;
 			sourceTree = "<group>";
 		};
 		C7D0B72F285AB10200F6B33A = {
@@ -346,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7A837CB286ED3F90074D0D1 /* BarGraph.swift in Sources */,
 				C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */,
 				C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */,
 				C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */,

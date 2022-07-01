@@ -11,6 +11,7 @@ struct BarGraphPage: View {
     var body: some View {
         VStack {
             Text("棒グラフ")
+            BarGraph()
         }
     }
 }
