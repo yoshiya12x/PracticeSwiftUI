@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ServiceItem: Identifiable {
     let id: UUID = UUID()
@@ -13,6 +14,13 @@ struct ServiceItem: Identifiable {
     let views: Int
     let category: String
     let date: Date
+
+    func generateColor() -> Color{
+        if name == "ServiceA" { return Color.red }
+        if name == "ServiceB" { return Color.cyan }
+        if name == "ServiceC" { return Color.purple }
+        return Color.gray
+    }
 }
 
 func generateServiceItem() -> [ServiceItem] {

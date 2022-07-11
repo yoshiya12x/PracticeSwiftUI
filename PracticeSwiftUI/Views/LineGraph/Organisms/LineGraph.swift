@@ -18,9 +18,11 @@ struct LineGraph: View {
                     y: .value("Views", item.views),
                     series: .value("Service", item.name)
                 )
-                .foregroundStyle(by: .value("Service", item.name))
+                // .foregroundStyle(by: .value("Service", item.name))
+                .foregroundStyle(item.generateColor())
             }
             .chartYScale(domain: 0...10000)
+            .chartLegend(Visibility.hidden)
         } else {
             // Fallback on earlier versions
         }
