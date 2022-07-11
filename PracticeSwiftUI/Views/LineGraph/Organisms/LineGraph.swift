@@ -12,14 +12,15 @@ struct LineGraph: View {
     private let items = generateServiceItem()
     var body: some View {
         if #available(iOS 16.0, *) {
-            Chart(items) {
+            Chart(items) { item in
                 LineMark(
-                    x: .value("Month", $0.date),
-                    y: .value("Views", $0.views),
-                    series: .value("Service", $0.name)
+                    x: .value("Month", item.date),
+                    y: .value("Views", item.views),
+                    series: .value("Service", item.name)
                 )
-                .foregroundStyle(by: .value("Service", $0.name))
+                .foregroundStyle(by: .value("Service", item.name))
             }
+            .chartYScale(domain: 0...10000)
         } else {
             // Fallback on earlier versions
         }
