@@ -20,8 +20,19 @@ struct LineGraph: View {
                 )
                 // .foregroundStyle(by: .value("Service", item.name))
                 .foregroundStyle(item.generateColor())
+                .lineStyle(StrokeStyle(lineWidth: 2.0, lineCap: .butt, lineJoin: .miter, dash: [10,10,10,10], dashPhase: 0))
+                PointMark(
+                    x: .value("Month", item.date),
+                    y: .value("Views", item.views)
+                )
+                .foregroundStyle(item.generateColor())
             }
             .chartYScale(domain: 0...10000)
+            .chartPlotStyle { content in
+                content
+                    .frame(width: 280, height: 600)
+                    .background(.blue.opacity(0.05))
+            }
             .chartLegend(Visibility.hidden)
         } else {
             // Fallback on earlier versions

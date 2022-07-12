@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C70EAE0A286D71B6009A9629 /* LineGraphPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EAE09286D71B6009A9629 /* LineGraphPage.swift */; };
 		C70EAE0E286D7F84009A9629 /* ServiceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70EAE0D286D7F84009A9629 /* ServiceItem.swift */; };
+		C727CCA4287D05C3006E108C /* LineGraphPage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C727CCA3287D05C3006E108C /* LineGraphPage2.swift */; };
+		C727CCA6287D05EE006E108C /* LineGraph2.swift in Sources */ = {isa = PBXBuildFile; fileRef = C727CCA5287D05EE006E108C /* LineGraph2.swift */; };
 		C75D0A77285B044E00A09A25 /* ToyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A76285B044E00A09A25 /* ToyPage.swift */; };
 		C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A78285BFF3700A09A25 /* ToyButton.swift */; };
 		C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		C70EAE09286D71B6009A9629 /* LineGraphPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphPage.swift; sourceTree = "<group>"; };
 		C70EAE0D286D7F84009A9629 /* ServiceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceItem.swift; sourceTree = "<group>"; };
+		C727CCA3287D05C3006E108C /* LineGraphPage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraphPage2.swift; sourceTree = "<group>"; };
+		C727CCA5287D05EE006E108C /* LineGraph2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineGraph2.swift; sourceTree = "<group>"; };
 		C75D0A76285B044E00A09A25 /* ToyPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyPage.swift; sourceTree = "<group>"; };
 		C75D0A78285BFF3700A09A25 /* ToyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyButton.swift; sourceTree = "<group>"; };
 		C75D0A7A285FF67B00A09A25 /* ToyCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyCircle.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 			children = (
 				C7A837C3286ECF2F0074D0D1 /* Organisms */,
 				C70EAE09286D71B6009A9629 /* LineGraphPage.swift */,
+				C727CCA3287D05C3006E108C /* LineGraphPage2.swift */,
 			);
 			path = LineGraph;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				C7A837C4286ED0000074D0D1 /* LineGraph.swift */,
+				C727CCA5287D05EE006E108C /* LineGraph2.swift */,
 			);
 			path = Organisms;
 			sourceTree = "<group>";
@@ -359,6 +365,8 @@
 			files = (
 				C7A837CB286ED3F90074D0D1 /* BarGraph.swift in Sources */,
 				C75D0A7B285FF67B00A09A25 /* ToyCircle.swift in Sources */,
+				C727CCA4287D05C3006E108C /* LineGraphPage2.swift in Sources */,
+				C727CCA6287D05EE006E108C /* LineGraph2.swift in Sources */,
 				C75D0A79285BFF3700A09A25 /* ToyButton.swift in Sources */,
 				C7D0B73E285AB10300F6B33A /* ContentView.swift in Sources */,
 				C7A837C8286ED2230074D0D1 /* BarGraphPage.swift in Sources */,
