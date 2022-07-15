@@ -23,6 +23,10 @@ struct LineGraph2: View {
             .chartYAxis {
                 AxisMarks(position: .leading)
             }
+//            .chartLegend(content: {
+//                Text("レジェンド")
+//            })
+            .chartLegend(position: .trailing, alignment: .bottom, spacing: 16)
         } else {
             // Fallback on earlier versions
         }
