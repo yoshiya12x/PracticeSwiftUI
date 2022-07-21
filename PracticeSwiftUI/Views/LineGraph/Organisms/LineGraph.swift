@@ -29,11 +29,9 @@ struct LineGraph: View {
             }
             .chartYScale(domain: 0...10000)
             .chartPlotStyle { content in
-                VStack{
-                    content
-                        .frame(width: 280, height: 600)
-                        .background(.blue.opacity(0.05))
-                }
+                content
+                    .frame(width: 280, height: 600)
+                    .background(.blue.opacity(0.05))
             }
             .chartLegend(Visibility.hidden)
         } else {
